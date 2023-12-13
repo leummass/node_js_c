@@ -1,0 +1,19 @@
+--Debugging
+
+Se puede debugear la aplicación utilizando puntos de interrupción como en cualquier programa, para debugear es necesario ir al package.json y dar en Depurar arriba de scripts 
+y seleccionar qué comando para correr el proyecto utilizar para debugear
+
+--Callback-hell 
+
+Cuando se llaman múltiples callbacks en una sola función se termina ejecutando solamente el primero y no se muestran los demas o se para esa función
+
+--factory function 
+
+Las factory functions son funciones que crean otras funciones
+
+--Patrón adaptador
+
+Adaptar una dependencia de terceros de nuestra propia forma
+
+--Promesas
+
