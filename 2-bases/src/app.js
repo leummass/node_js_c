@@ -27,7 +27,7 @@
 // ! Promesas
 const {getPokemonById} = require('./js-foundation/6-promesas')
 
-getPokemonById(1).
+getPokemonById(401).
     then( (pokemon) => console.log({pokemon})).
     catch( (err) => console.log({err}))
 
