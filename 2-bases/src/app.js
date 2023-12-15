@@ -25,11 +25,19 @@
 // console.log({john})
 
 // ! Promesas
-const {getPokemonById} = require('./js-foundation/6-promesas')
+// const {getPokemonById} = require('./js-foundation/6-promesas')
 
-getPokemonById(401).
-    then( (pokemon) => console.log({pokemon})).
-    catch( (err) => console.log({err}))
+// getPokemonById(401).
+//     then( (pokemon) => console.log({pokemon})).
+//     catch( (err) => console.log({err}))
 
+// ! Logger
+const {buildLogger} = require('./plugins')
+
+const logger = buildLogger('app.js');
+
+logger.log('Hola mundo');
+
+logger.error('ERROR. ERROR.')
 
 

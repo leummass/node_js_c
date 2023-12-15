@@ -15,5 +15,10 @@ Las factory functions son funciones que crean otras funciones
 
 Adaptar una dependencia de terceros de nuestra propia forma
 
---Promesas
+--Winston
 
+logger para errores
+
+--Typescript con Node
+
+https://gist.github.com/Klerith/47af527da090043f604b972b22dd4c01
