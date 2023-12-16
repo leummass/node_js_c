@@ -3,6 +3,8 @@
 //const { getUserById } = require('./js-foundation/3-callbacks')
 //console.log(emailTemplate)
 
+import { buildLogger } from "./plugins/logger.plugin"
+
 
 // ! const { getUserById } = require('./js-foundation/4-arrow')
 // const id = 1;
@@ -32,12 +34,14 @@
 //     catch( (err) => console.log({err}))
 
 // ! Logger
-const {buildLogger} = require('./plugins')
+// const {buildLogger} = require('./plugins')
 
 const logger = buildLogger('app.js');
 
 logger.log('Hola mundo');
 
 logger.error('ERROR. ERROR.')
+
+console.log('Hola')
 
 

@@ -1,4 +1,10 @@
-const heroes = [
+interface Hero {
+    id: number;
+    name: string;
+    owner: string;
+}
+
+export const heroes: Hero[] = [
     {
         id: 1,
         name: 'Ironman',
@@ -16,9 +22,3 @@ const heroes = [
     },
 ];
 
-const findHeroById = ( id ) => {
-    return heroes.find( (hero) => hero.id === id);
-}
-const hero = findHeroById(4);
-
-console.log(hero?.name ?? 'Heroe no encontrado');

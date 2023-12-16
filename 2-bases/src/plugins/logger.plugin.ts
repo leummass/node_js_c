@@ -1,4 +1,6 @@
-const winston = require('winston');
+import winston, {format} from 'winston'
+
+//const winston = require('winston'); codigo js
 const { combine, timestamp, json} = winston.format;
 
 const logger = winston.createLogger({
@@ -28,13 +30,13 @@ logger.add(new winston.transports.Console({
 }));
 
 //funcion que recibe el servicio en el que se disparó el error y retorna un log con el tipo, mensaje y el servicio
-module.exports = function buildLogger(service){
+export const  buildLogger = (service:string) => {
 
     return {
-        log: (message)=> {
+        log: (message:string)=> {
             logger.log('info', {message, service});
         },
-        error: (message) => {
+        error: (message:string) => {
           logger.error('error', {
             message, 
             service,
