@@ -36,12 +36,12 @@ import { buildLogger } from "./plugins/logger.plugin"
 // ! Logger
 // const {buildLogger} = require('./plugins')
 
-const logger = buildLogger('app.js');
+// const logger = buildLogger('app.js');
 
-logger.log('Hola mundo');
+// logger.log('Hola mundo');
 
-logger.error('ERROR. ERROR.')
+// logger.error('ERROR. ERROR.')
 
-console.log('Hola')
+// console.log('Hola')
 
 
