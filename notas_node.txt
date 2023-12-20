@@ -34,4 +34,11 @@ Si el código a probar es síncrono no hay necesidad de utilizar "done"
 
 Modifica el valor de retorno en el ambiente actual, en este caso, getFullYear donde sea que se utilice dentro de este ambiente será 1995
 
+-- BUILD y Testing
 
+al usar el script "build": "npm run test && rimraf ./dist && tsc" se hace que primero se corran todas las pruebas de testing y si se obtiene un resultado exitoso entonces se creará
+la carpeta dist
+es necesario agregar 
+"include":["src/**/*"],
+"exclude": ["node_modules", "**/*.spec.ts","**/*.test.ts"],
+al archivo tsconfig.json

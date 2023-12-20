@@ -2,8 +2,8 @@ import winston, {format} from 'winston'
 
 //const winston = require('winston'); codigo js
 const { combine, timestamp, json} = winston.format;
-
-const logger = winston.createLogger({
+//se exporta el logger para cuestiones de pruebas
+export const logger = winston.createLogger({
   level: 'info',
   format: combine(
     timestamp(),
