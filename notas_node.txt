@@ -22,6 +22,7 @@ logger para errores
 --Typescript con Node
 
 https://gist.github.com/Klerith/47af527da090043f604b972b22dd4c01
+Para ejecutar solamente una vez sin nodemon utilizar ts-node
 
 --Testing con Typescript
 
@@ -42,3 +43,8 @@ es necesario agregar
 "include":["src/**/*"],
 "exclude": ["node_modules", "**/*.spec.ts","**/*.test.ts"],
 al archivo tsconfig.json
+
+
+--Sección 6
+
+https://gist.github.com/Klerith/47af527da090043f604b972b22dd4c01
