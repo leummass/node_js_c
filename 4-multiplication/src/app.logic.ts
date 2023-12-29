@@ -1,19 +1,21 @@
 import * as fs from 'fs';
+import { yarg } from './config/plugins/args.plugin';
 
 
-const message: string = 'Hola';
+//Se ponen dos puntos y el parámetro que son para que no haya problema con el tipado
+const {b:base, l:limit, s:show} = yarg;
 
-console.log("====================");
-console.log("Tabla del 5")
-console.log("====================");
 let texto: string = "===================="
-texto = texto + "\nTabla del 5"
+texto = texto + `\nTabla del ${base}`
 texto = texto + "\n===================="
-for(let i = 1; i<=10;i++){
-    console.log(`5 x ${i} = ${5*i}`);
-    texto+= `\n5 x ${i} = ${5*i}`
+for(let i = 1; i<=limit;i++){
+    texto+= `\n${base} x ${i} = ${base*i}`
 }
 
-const outputPath = 'outputs'
+if(show){
+    console.log(texto);
+}
+
+const outputPath = 'outputs';
 fs.mkdirSync(outputPath, {recursive: true});
 fs.writeFileSync(`${outputPath}/archivo.txt`,texto);
