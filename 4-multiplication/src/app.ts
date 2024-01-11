@@ -8,7 +8,6 @@ import { ServerApp } from './presentation/server-app';
 //Función anónima autoinvocada
 ( async() => {
     await main();
-    console.log('Ejecutando');
 })();
 
 async function main() {

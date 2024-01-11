@@ -17,7 +17,8 @@ export class CreateTable implements CreateTableUseCase{
     execute({base, limit = 10}:CreateTableOptions){//datos necesarios para crear la tabla de multiplicar
         let texto = '';
         for(let i = 1; i<=limit;i++){
-            texto+= `\n${base} x ${i} = ${base*i}`
+            texto+= `${base} x ${i} = ${base*i}`
+            if(i<limit) texto+= '\n';
         }
         return texto;
     }
