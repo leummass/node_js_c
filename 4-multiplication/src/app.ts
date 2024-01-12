@@ -6,7 +6,7 @@ import { ServerApp } from './presentation/server-app';
 
 
 //Función anónima autoinvocada
-( async() => {
+( async () => {
     await main();
 })();
 
