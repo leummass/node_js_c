@@ -52,3 +52,7 @@ https://gist.github.com/Klerith/47af527da090043f604b972b22dd4c01
 --Arquitectura
     -Domain 
     son las reglas que van a regir las capas exteriores, dentro de esta van los use-cases 
+    
+--Node con Typescript TS-Node-dev 
+
+https://gist.github.com/Klerith/3ba17e86dc4fabd8301a59699b9ffc0b
